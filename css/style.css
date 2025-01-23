@@ -8,6 +8,9 @@
 	box-sizing: border-box;
 	font-family: "Inter", sans-serif;
 }
+html{
+	scroll-behavior: smooth;
+}
 .container {
 	max-width: 1344px;
 	margin: 0 auto;
@@ -178,6 +181,9 @@ nav .abtn button:hover {
 	padding: 54px 0;
 	background: var(--black);
 }
+#bio_part .container .bio {
+	max-width: 772px;
+}
 #bio_part .container h3 {
 	font-weight: bold;
 	font-size: 30px;
@@ -187,7 +193,7 @@ nav .abtn button:hover {
 #bio_part .container p {
 	font-size: 15px;
 	color: var(--white);
-	line-height: 138.7%;
+	line-height: 155.7%;
 	margin: 35px 0;
 }
 .abtn button {
@@ -248,30 +254,35 @@ nav .abtn button:hover {
 
 
 #about_me_part{
-  padding: 200px 0;
+  padding: 180px 0 130px;
   background: radial-gradient(circle, rgba(238, 234, 243, 0.432) 0%, rgb(160, 161, 161) 100%);
 }
-
-#about_me_part .container .title h2{
+ .container .header h2{
   font-size: 30px;
   display: inline-block;
-  padding: 15px 25px;
+  padding: 20px 35px;
   font-weight: bold;
   color: var(--black);
-  line-height: 127.9%;
   letter-spacing: 15.54px;
-border: 4px solid var(--black);
-}
-#about_me_part .container .title  p{
-  margin: 95px ;
-  font-size: 15px;
+	border: 4px solid var(--black);
+	box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;}
+#about_me_part .container .header  p{
+	margin: 95px auto 80px;
+  font-size: 18px;
   font-weight: 300;
   text-align: left;
+	max-width: 1000px;
+	line-height: 138.7%;
+	
 }
-#about_me_part .container .title  p span{
+#about_me_part .container .header  p span{
   display: block;
   text-align: left;
   margin-top: 15px ;
+}
+#about_me_part .container  .line02{
+	text-align: center;
+	margin:95px 0 100px;
 }
 #about_me_part .container .abtn button{
   border-left: 1px solid var(--black);
@@ -285,4 +296,65 @@ border: 4px solid var(--black);
 #about_me_part .container .abtn button:hover{
 	color: #ffffff;
 }
+
+
+/*====================== about_me_part end ===========================*/
+
+
+#about_me_skill_part{
+  padding: 70px 0 50px;
+  background: radial-gradient(circle, rgba(238, 234, 243, 0.432) 0%, rgb(208, 209, 209) 100%);
+}
+#about_me_skill_part .container .about_me_skill_part{
+	margin-bottom: 80px;	
+}
+#about_me_skill_part .container  .row h3{
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: 18.54%;
+	margin-bottom: 30px;
+}
+#about_me_skill_part .container  .row p{
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 25px;
+}
+#about_me_skill_part .container  .line02{
+	text-align: center;
+	margin:95px 0 100px;
+}
+
+/*====================== about_me_skill_part end ===========================*/
+
+#skills_part{
+	padding: 162px 0;
+  background: radial-gradient(circle, rgba(238, 234, 243, 0.432) 0%, rgb(160, 161, 161) 100%);
+}
+#skills_part .container .row {
+	margin-top: 95px;
+}
+#skills_part .container .row h3 {
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 18.54%;
+	color: var(--black);
+}
+#skills_part .container .row {
+	row-gap: 65px;
+}
+#skills_part .container .row .part img{
+	height: 85px;
+
+}
+#skills_part .container .row .part p{
+	margin-top: 30px;
+	color: var(--black);
+	font-size: 24px;
+	letter-spacing: 13.54%;
+}
+
+
+
+
+
 
