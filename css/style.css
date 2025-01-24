@@ -79,7 +79,7 @@ a {
 	width: 2px;
 	background: var(--white);
 	top: 50%;
-	left: 0;
+	left: -2px;
 	transform: translatey(-50%);
 }
 
@@ -123,30 +123,30 @@ nav .abtn button:hover {
 
 /*====================== navbar end ===========================*/
 
-#about_part {
+#home_part {
 	background: #d7d7d7;
 }
-#about_part .container .main .row .text h3 {
+#home_part .container .main .row .text h3 {
 	font-weight: bold;
 	font-size: 40px;
 }
-#about_part .container .main .row .text h2 {
+#home_part .container .main .row .text h2 {
 	font-weight: bold;
 	font-size: 70px;
 	margin: 54px 0 0px;
 }
-#about_part .container .main .row .text p {
+#home_part .container .main .row .text p {
 	font-weight: 900;
 	font-size: 23px;
 	color: #909090;
 }
-#about_part .container .main .row .left .icon {
+#home_part .container .main .row .left .icon {
 	margin-top: 0px;
 	display: flex;
 	justify-content: center;
 	column-gap: 31px;
 }
-#about_part .container .main .row .left .icon i {
+#home_part .container .main .row .left .icon i {
 	font-size: 35px;
 	padding: 10px 12px;
 	color: var(--black);
@@ -154,28 +154,28 @@ nav .abtn button:hover {
 	border-radius: 10px;
 	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-#about_part .container .main .row .left .icon {
+#home_part .container .main .row .left .icon {
 	margin-top: 30px;
 }
-#about_part .container .main .row .linee {
+#home_part .container .main .row .linee {
 	margin: 126px 0 0;
 	display: flex;
 	justify-content: center;
 }
-#about_part .container .main .row .right .right1 {
+#home_part .container .main .row .right .right1 {
 	background: #000;
 	clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
 	display: flex;
 	align-items: end;
 	justify-content: end;
 }
-#about_part .container .main .row .right img {
+#home_part .container .main .row .right img {
 	height: 590px;
 	object-fit: contain;
 	margin: 0 auto;
 }
 
-/*====================== about_part end ===========================*/
+/*====================== home_part end ===========================*/
 
 #bio_part {
 	padding: 54px 0;
@@ -344,6 +344,7 @@ nav .abtn button:hover {
 }
 #skills_part .container .row .part img{
 	height: 85px;
+	object-fit: contain;
 
 }
 #skills_part .container .row .part p{
@@ -353,8 +354,167 @@ nav .abtn button:hover {
 	letter-spacing: 13.54%;
 }
 
+/*====================== skills_part end ===========================*/
+
+
+#portfolio_part{
+	padding: 100px 0 50px;
+	background: #212529;
+}
+#portfolio_part .container .main .row{
+	margin-top: 140px;
+	padding: 12px;
+	row-gap: 80px;
+}
+#portfolio_part .container .main .header h2{
+	color: var(--white);
+	border-color: var(--white);
+
+}
+#portfolio_part .container .main .row img{
+	height: 350px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	transition: 0.4s;
+	-webkit-box-shadow: 0px 0px 41px 8px rgba(98,39,82,1);
+	-moz-box-shadow: 0px 0px 41px 8px rgba(98,39,82,1);
+	box-shadow: 0px 0px 41px 8px rgba(98,39,82,1);
+	}
+#portfolio_part .container .main .row .coverr a:hover img{
+	border-radius: 8px;
+	transform: scale(1.03);
+}
+#portfolio_part .container .main .row .text{
+	text-align: end;
+}
+#portfolio_part .container .main .row .text h3{
+	color: var(--white);
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 18.54%;
+}
+#portfolio_part .container .main .row .text p{
+	color: var(--white);
+	margin: 25px 0 ;
+  font-size: 18px;
+  font-weight: 300;
+	max-width: 1000px;
+	line-height: 138.7%;
+}
+#portfolio_part .container .main .row .abtn{
+	display: flex;
+	column-gap: 25px;
+}
+#portfolio_part .container .main .row .abtn button:hover{
+	color: var(--white);
+}
+#portfolio_part .container .main .partt .row:nth-child(odd),
+#portfolio_part .container .main .partt .row:nth-child(odd) .abtn {
+	flex-direction: row-reverse;
+}
+#portfolio_part .container .main .partt .row:nth-child(odd) .text {
+	text-align: start;
+}
+#portfolio_part .container .main .partt .row:nth-child(odd) .coverr{
+	text-align: end;
+}
+#portfolio_part .container .ending{
+	color: var(--white);
+	margin: 80px 0 0;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 200;
+}
+
+/*====================== portfolio_part end ===========================*/
 
 
 
+#contact_part{
+	padding: 142px 0 62px;
+  background: radial-gradient(circle, rgba(238, 234, 243, 0.432) 0%, rgb(160, 161, 161) 100%);
+}
+#contact_part .container .header p{
+	margin: 60px auto 128px;
+	max-width: 763px;
+}
+#contact_part .container form input{
+	color: var(--black);
+	outline: none;
+	background: transparent;
+	padding: 18px 19px 14px;
+	margin-bottom: 55px;
+	width: 70%;
+	border: 0;
+	border-left: 5px solid var(--black);
+	border-bottom: 5px solid var(--black);
+}
+#contact_part .container form input::placeholder{
+	color: #8B8B8B;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 4%;
+}
+#contact_part .container form textarea{
+	color: var(--black);
+	outline: none;
+	background: transparent;
+	padding: 18px 19px 14px;
+	margin-bottom: 55px;
+	width: 70%;
+	border: 0;
+	border-left: 5px solid var(--black);
+	border-bottom: 5px solid var(--black);
+}
+#contact_part .container form textarea::placeholder{
+	color: #8B8B8B;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 4%;
+}
+#contact_part .container .abtn button{
+  border-left: 1px solid var(--black);
+	border-right: 1px solid var(--black);
+  color: var(--black);
+}
+#contact_part .container .abtn button .ovr1,
+#contact_part .container .abtn button .ovr2{
+  background: var(--black);
+}
+#contact_part .container .abtn button:hover{
+	color: #ffffff;
+}
 
+
+/*====================== footer end ===========================*/
+
+footer{
+	padding: 69px 0;
+	background:  #1a1a1a;
+}
+footer .container .back_to {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+footer .container .back_to a{
+	color: var(--white);
+}
+footer .container .icon {
+	display: flex;
+	justify-content: center;
+	column-gap: 28px;
+}
+footer .container .icon a i{
+	color: var(--white);
+	font-size: 30px;
+	margin: 45px 0;
+}
+footer .container p{
+	color: var(--white);
+	font-size: 16px;
+	text-align: center;
+}
 
