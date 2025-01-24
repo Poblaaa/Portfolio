@@ -499,7 +499,8 @@ footer .container .back_to {
 	justify-content: center;
 	align-items: center;
 }
-footer .container .back_to a{
+footer .container .back_to a,
+footer .container .back_to a i{
 	color: var(--white);
 }
 footer .container .icon {
