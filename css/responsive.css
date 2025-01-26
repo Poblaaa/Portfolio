@@ -1,0 +1,55 @@
+@media (min-width: 320px) and (max-width: 575.98px) {
+  	/*====================== reponsive_for_Extra_small  Start ===========================*/
+
+
+    .navbar {
+      padding: 10px 5px;
+      align-items: center;
+    }
+    .navbar .navbar-toggler {
+      border: 0;
+      color: #d7d7d7;
+    }
+    .navbar-toggler:focus {
+      box-shadow: none !important;
+    }
+
+    .navbar .nav-link:hover {
+      transform: scale(1.05);
+    }
+    .navbar-collapse {
+      transition: 0.4s;
+    }
+    .navbar .nav-link {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 5px 0 !important;
+    }
+    .navbar .navbar-nav {
+      border-radius: 5px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 12px;
+      justify-content: space-between;
+      column-gap: 2px;
+      row-gap: 12px;
+    }
+    .navbar-nav li {
+      width: 48%;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .navbar .nbtn  {
+      text-align: center;
+    }
+    .navbar .nbtn button {
+      margin: 0 0 5px;
+      width: 100%;
+    }
+
+    /* ----------------------------------- */
+
+    #home_part .container .main .row  {
+    flex-direction: column-reverse;
+    }
+}
