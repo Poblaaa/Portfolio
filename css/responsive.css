@@ -47,9 +47,126 @@
       width: 100%;
     }
 
-    /* ----------------------------------- */
+/*====================== navbar end ===========================*/
 
-    #home_part .container .main .row  {
-    flex-direction: column-reverse;
+
+
+    #home_part {
+      padding-top: 113px;
     }
+    #home_part .container .row .right img {
+      height: 380px;
+      margin: 0 ;
+      /* display: none; */
+    }
+    #home_part::before{
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      bottom: 0;
+      right: 0;
+      background: #000000;
+      opacity: 56%;
+      z-index: 1;
+      clip-path: polygon(1% 78%, 100% 61%, 100% 100%, 0 100%);
+    }
+    #home_part .container .row .right .right1 {
+      justify-content: end;
+    }
+
+    #home_part .container .row{
+      position: relative;
+    }
+
+    #home_part .container .row .main {
+      position: absolute;
+      display: flex;
+      bottom: 0;
+      left: 0;
+      height: 50%;
+      width: 100%;
+      padding: 0 15px;
+      z-index: 1;
+      justify-content: space-between;
+      align-items: end;
+      margin-bottom: 10px;
+    }
+    #home_part .container .row .text h3 {
+      font-size: 14px;
+      color: #ffffff;
+    }
+    #home_part .container .row .text h2 {
+      font-size: 25px;
+      margin: 11px 0 0px;
+      color: #ffffff;
+    }
+    #home_part .container .row .text p {
+      font-size: 12px;
+    }
+
+    #home_part .container .row .left .left2 {
+      margin: 0;
+      max-width:auto;
+      text-align: end;
+      align-items: end;
+      justify-content: end;
+      position: relative;
+    }
+
+    #home_part .container .row .left .left2 .linee {
+      display: none;
+    }
+    #home_part .container .row .left .left2 .icon {
+     flex-direction: column;
+     margin: 0;
+    }
+    #home_part .container .row .left .icon i {
+      font-size: 18px;
+      padding:0;
+      color: #ffffff;
+      border-radius: 5px;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      transition: 0.3s;
+      background: none;
+
+    }
+    #home_part .container .row .left .abtn {
+      position: absolute;
+      max-width: 200px;
+      top: 150px;
+      left: -118px;
+      margin: 0;
+    }
+    #home_part .container .row .left .abtn button{
+      background: #ffffff;
+      padding: 5px 34px;
+      font-size: 10px;
+    }
+/*====================== home_part end ===========================*/
+
+
+#bio_part .container h3 {
+	font-size: 16px;
+	letter-spacing: 14.54%;
+	text-align: center;
+}
+#bio_part .container p {
+	font-size: 12px;
+	line-height: 146.7%;
+	margin: 14px 0 35px;
+  text-align: justify;
+}
+#bio_part .container .row .abtn{
+  text-align: center;
+}
+.abtn button {
+	font-size: 12px;
+	padding: 10px 27px;
+}
+#bio_part .container .bio {
+	max-width: none;
+  padding: 0 12px;
+}
+    
 }

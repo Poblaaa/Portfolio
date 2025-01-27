@@ -42,7 +42,7 @@ a {
 .navbar {
 	background: #000000;
 	padding: 20px 5px;
-	position: sticky;
+	position: fixed;
 	z-index: 9999;
 	width: 100%;
 	top: 0px;
@@ -133,7 +133,7 @@ nav .nbtn button:hover{
 /*====================== navbar end ===========================*/
 
 #home_part{
-	padding-top: 35px;
+	padding-top: 113px;
 	background: #000;
 	position: relative;
 	z-index: 1;
@@ -153,11 +153,13 @@ nav .nbtn button:hover{
 #home_part .container  .row .text h3 {
 	font-weight: bold;
 	font-size: 40px;
+	color: var(--black) ;
 }
 #home_part .container  .row .text h2 {
 	font-weight: bold;
 	font-size: 70px;
 	margin: 54px 0 0px;
+	color: var(--black) ;
 }
 #home_part .container  .row .text p {
 	font-weight: 900;
@@ -176,9 +178,13 @@ nav .nbtn button:hover{
 	background: #c4c4c4;
 	border-radius: 10px;
 	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	transition: 0.3s;
+}
+#home_part .container  .row .left .icon i:hover{
+	transform: scale(1.05);
 }
 #home_part .container  .row .left .left2 {
-	margin: 100px 0 70px;
+	margin: 100px 0 20px;
 	max-width: 450px;
 	text-align: center;
 }
@@ -192,6 +198,22 @@ nav .nbtn button:hover{
 	height: 877px;
 	object-fit: contain;
 	margin: 0 auto;
+}
+
+#home_part .container .main .abtn{
+	margin-top: 88px ;
+}
+#home_part .container .main .abtn button{
+  border-left: 1px solid var(--black);
+	border-right: 1px solid var(--black);
+  color: var(--black);
+}
+#home_part .container .main .abtn button .ovr1,
+#home_part .container .main .abtn button .ovr2{
+  background: var(--black);
+}
+#home_part .container .main .abtn button:hover{
+	color: #ffffff;
 }
 
 /*====================== home_part end ===========================*/
@@ -394,7 +416,7 @@ nav .nbtn button:hover{
 
 
 #portfolio_part{
-	padding: 100px 0 50px;
+	padding: 180px 0 50px;
 	background: #212529;
 }
 #portfolio_part .container .main .row{
