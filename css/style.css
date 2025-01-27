@@ -496,6 +496,9 @@ nav .nbtn button:hover{
 #contact_part .container .header p{
 	margin: 60px auto 128px;
 	max-width: 763px;
+	font-size: 15px;
+	line-height: 138.7%;
+	color: var(--black);
 }
 #contact_part .container form input{
 	color: var(--black);
