@@ -150,14 +150,18 @@ nav .nbtn button:hover{
 	left: 0;
 
 }
+#home_part .container  .row .main{
+	max-width: 470px;
+
+}
 #home_part .container  .row .text h3 {
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 35px;
 	color: var(--black) ;
 }
 #home_part .container  .row .text h2 {
 	font-weight: bold;
-	font-size: 70px;
+	font-size: 65px;
 	margin: 54px 0 0px;
 	color: var(--black) ;
 }
@@ -183,9 +187,8 @@ nav .nbtn button:hover{
 #home_part .container  .row .left .icon i:hover{
 	transform: scale(1.05);
 }
-#home_part .container  .row .left .left2 {
+#home_part .container  .row .main .linee {
 	margin: 100px 0 20px;
-	max-width: 450px;
 	text-align: center;
 }
 
@@ -201,12 +204,13 @@ nav .nbtn button:hover{
 }
 
 #home_part .container .main .abtn{
-	margin-top: 88px ;
+	margin-top: 70px ;
 }
 #home_part .container .main .abtn button{
   border-left: 1px solid var(--black);
 	border-right: 1px solid var(--black);
   color: var(--black);
+	
 }
 #home_part .container .main .abtn button .ovr1,
 #home_part .container .main .abtn button .ovr2{
@@ -225,7 +229,7 @@ nav .nbtn button:hover{
 #bio_part .container .bio {
 	max-width: 772px;
 }
-#bio_part .container h3 {
+#bio_part .container .row .bio h3 {
 	font-weight: bold;
 	font-size: 30px;
 	color: var(--white);
@@ -410,6 +414,7 @@ nav .nbtn button:hover{
 	color: var(--black);
 	font-size: 24px;
 	letter-spacing: 13.54%;
+	font-weight: bold;
 }
 
 /*====================== skills_part end ===========================*/
@@ -423,6 +428,7 @@ nav .nbtn button:hover{
 	margin-top: 140px;
 	padding: 12px;
 	row-gap: 80px;
+	flex-wrap: wrap;
 }
 #portfolio_part .container .main .header h2{
 	color: var(--white);
